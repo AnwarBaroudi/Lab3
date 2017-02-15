@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="countdown" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xPC-RB-Geh">
+                                <rect key="frame" x="95.5" y="145" width="183" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cB7-st-kl8"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="phP-C1-UGN">
+                                <rect key="frame" x="96" y="100" width="183" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cu6-ra-DFG">
+                                <rect key="frame" x="95.5" y="195" width="183" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pzg-JJ-eFa">
+                                <rect key="frame" x="95.5" y="200" width="183" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="phP-C1-UGN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0R6-lX-MoJ"/>
+                            <constraint firstItem="phP-C1-UGN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="80" id="91z-19-FDE"/>
+                            <constraint firstItem="Pzg-JJ-eFa" firstAttribute="height" secondItem="cu6-ra-DFG" secondAttribute="height" id="9rp-Ck-C00"/>
+                            <constraint firstItem="xPC-RB-Geh" firstAttribute="height" secondItem="phP-C1-UGN" secondAttribute="height" id="ApL-Fd-HGE"/>
+                            <constraint firstItem="cu6-ra-DFG" firstAttribute="width" secondItem="xPC-RB-Geh" secondAttribute="width" id="Auh-tt-xCL"/>
+                            <constraint firstItem="xPC-RB-Geh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DTG-Zq-HAF"/>
+                            <constraint firstItem="xPC-RB-Geh" firstAttribute="width" secondItem="phP-C1-UGN" secondAttribute="width" id="G4E-xH-al4"/>
+                            <constraint firstItem="cu6-ra-DFG" firstAttribute="top" secondItem="xPC-RB-Geh" secondAttribute="bottom" constant="20" id="GTW-LY-M6f"/>
+                            <constraint firstItem="Pzg-JJ-eFa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HEx-i6-3AS"/>
+                            <constraint firstItem="Pzg-JJ-eFa" firstAttribute="width" secondItem="cu6-ra-DFG" secondAttribute="width" id="Q2h-5C-x91"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="phP-C1-UGN" secondAttribute="trailing" constant="80" id="TUu-Dk-K9K"/>
+                            <constraint firstItem="Pzg-JJ-eFa" firstAttribute="top" secondItem="cu6-ra-DFG" secondAttribute="bottom" constant="5" id="X3X-2n-npt"/>
+                            <constraint firstItem="cu6-ra-DFG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="biA-Yp-vrD"/>
+                            <constraint firstItem="phP-C1-UGN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="hYx-r2-efZ"/>
+                            <constraint firstItem="xPC-RB-Geh" firstAttribute="top" secondItem="phP-C1-UGN" secondAttribute="bottom" constant="15" id="mSI-vY-Bkj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countField" destination="phP-C1-UGN" id="4Xm-kW-R3H"/>
+                        <outlet property="timerButton" destination="xPC-RB-Geh" id="T1E-6f-SZC"/>
+                        <outlet property="wierdLabel1" destination="cu6-ra-DFG" id="PsY-yX-7Us"/>
+                        <outlet property="wierdLabel2" destination="Pzg-JJ-eFa" id="9od-x4-xHS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>
