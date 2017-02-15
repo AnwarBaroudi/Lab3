@@ -1,21 +1,31 @@
 # Lab3
 iOS deCal Lab 3: Countdown
 
-In today's lab, you will be creating a simple app from scratch, -paying mind to what components of your app are considered part of the of the model and which are part of the controller.- (should I not put the thing with - around it here?)
+# iOS DeCal - Lab 3 (MVC) #
+
+## Due Date ##
+Tuesday, February 21st at 11:59 pm 
+
+## Overview ##
+
+In today's lab, you will be creating a simple app completely from scratch, while keeping in mind which components of your app are considered part of the of the model and which are part of the controller.
 
 -place cool gif thing of app here-
 
-Your final app should have the following functionality:
+To get checked off, your app must satisfy the following requirements:
 
-1. A text field that allows you to enter **only** numbers, which also counts down with time.
+1. Your app must include a **Model** file for your Timer, a **View** for your UI elements, and a **Controller** linking your timer model to your view. 
 
-2. A single button that allows for the starting of a timer, along with the pausing of said timer. This button's text should change between "Start" and "Pause" under appropriate circumstances.
+2. Your view should include a text field that allows the user to input an integer value to count down from (this text field **should not*** allow non-integer characters to be entered).
 
-3. When your timer hits 0, your device should sound an alarm.
+3. Your view should include a UILabel displaying the amount of time remaining.
 
-4. Improper input, including a lack of input, non-positive numbers, strings, etc. should be handled without crashing the app.
+4. Your view should include a Start / Stop button for starting and stopping the timer.
 
-Without knowledge of delegation and other techniques that bridge the model, view, and the controller, upholding MVC for this app will be difficult, but you do need to start thinking about that seperation. To this end, while you may put all of your code in the ViewController file, **please use comments to indicate which parts of your code should belong in a model, and which parts belong in the controller.** You must show these to be checked off/receive credit for the lab.
+5. When your timer hits 0, your device should sound an alarm.
+
+6. Improper input, including a lack of input, non-positive numbers, strings, etc. should be handled without crashing the app.
+
 
 While this lab is not particularly difficult, chances are you don't know both the classes that will make this counter work offhand, take this as an opportunity to get used to reading documentations, asking TAs any questions about the way Swift code is documented along the way.
 
