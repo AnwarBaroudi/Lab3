@@ -1,7 +1,9 @@
 # Lab3
 iOS deCal Lab 3: Countdown
 
-In today's lab, you will be creating a simple app from scratch, -paying mind to what components of your app are considered part of the of the model and which are part of the controller.-
+In today's lab, you will be creating a simple app from scratch, -paying mind to what components of your app are considered part of the of the model and which are part of the controller.- (should I not put the thing with - around it here?)
+
+-place cool gif thing of app here-
 
 Your final app should have the following functionality:
 
